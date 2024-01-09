@@ -1,4 +1,4 @@
-This readme file includes some description and guidance for Airline Passenger Satisfaction Prediction, first using a decision tree algorithm and then a K-NN algorithm.
+This readme file includes some description and guidance for Airline Passenger Satisfaction Prediction,  using a decision tree algorithm  a K-NN algorithm and an Artificial Neural Network.
 
 
 
@@ -64,7 +64,7 @@ The dataset includes the following columns:
     Flight Distance
     Departure and Arrival Time Convenience
     ...
-The The libraries are imported
+ The libraries are imported
 
 Part 1: Data Preprocessing
 Handling Missing Values
@@ -105,3 +105,10 @@ The confusion matrix was visualized using the seaborn heatmap, providing a clear
 Conclusion
 
 The Decision Tree Classifier demonstrated strong predictive capabilities for passenger satisfaction based on the provided features. The high accuracy suggests that the model is effective in distinguishing between satisfied and unsatisfied passengers.
+
+
+
+ANN
+The dataset is the same as for the other 2 algorithms used before, thus I'll not explain it again from the beginning.
+The only differences between the 2 previous models and Ann are that in this last case, I  did use feature selection and Smote.
+The results of this last model are the best.
