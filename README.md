@@ -1,4 +1,4 @@
-This readme file includes some description and guidance for Airline Passenger Satisfaction Prediction,  using a decision tree algorithm  a K-NN algorithm and an Artificial Neural Network.
+This readme file includes some description and guidance for Airline Passenger Satisfaction Prediction,  using a decision tree algorithm  a K-NN algorithm, and an Artificial Neural Network.
 
 
 
@@ -23,10 +23,10 @@ The dataset includes the following columns:
 Part 1: Data Preprocessing
 Handling Missing Values
 
-In the first part of the code, missing values in the dataset were addressed. The missing values in the 'Arrival Delay' column were filled using an median..
+In the first part of the code, missing values in the dataset were addressed. The missing values in the 'Arrival Delay' column were filled using a median..
 Column Operations
 
-Unnecessary columns, such as 'ID', were dropped from the dataset. The 'Age' column was shifted after the 'Class' column for standardization purposes. The 'Satisfaction' column was moved to the end of the dataset.
+Unnecessary columns, such as 'ID', were dropped from the dataset. The 'Age' column was shifted after the 'Class' column for standardization. The 'Satisfaction' column was moved to the end of the dataset.
 Correlation Analysis
 
 A correlation matrix was computed to understand the relationships between different features in the dataset.
@@ -69,12 +69,12 @@ The dataset includes the following columns:
 Part 1: Data Preprocessing
 Handling Missing Values
 
-In the first part of the code, missing values in the dataset were addressed. The missing values in the 'Arrival Delay' column were filled using an median..
+In the first part of the code, missing values in the dataset were addressed. The missing values in the 'Arrival Delay' column were filled using a median..
 Column Operations
 
-The categorical columns are transformed to numerical
+The categorical columns are transformed into numerical
 
-Unnecessary columns, such as 'ID', were dropped from the dataset. The 'Age' column was shifted after the 'Class' column for standardization purposes. The 'Satisfaction' column was moved to the end of the dataset.
+Unnecessary columns, such as 'ID', were dropped from the dataset. The 'Age' column was shifted after the 'Class' column for standardization. The 'Satisfaction' column was moved to the end of the dataset.
 Correlation Analysis
 
 
@@ -88,7 +88,7 @@ Data Splitting
 The data was divided into training and testing sets using the train_test_split function from scikit-learn.
 
 Data scaling
-The data was scaled usingg Minmax scaler
+The data was scaled using Minmax scaler
 Decision Tree Model
 
 A K-nn Classifier was selected as the predictive model. Grid search was used to find the optimal hyperparameters for the K-nn.
@@ -100,15 +100,15 @@ Confusion Matrix Visualization
 The confusion matrix was visualized using the seaborn heatmap, providing a clear overview of the model's true positive, true negative, false positive, and false negative predictions.
 Conclusion
 
-The Knn Classifier demonstrated strong predictive capabilities for passenger satisfaction based on the provided features. The high accuracy suggests that the model is effective in distinguishing between satisfied and unsatisfied passengers.
+The Knn Classifier demonstrated strong predictive capabilities for passenger satisfaction based on the provided features. The high accuracy suggests that the model effectively distinguishes between satisfied and unsatisfied passengers.
 The confusion matrix was visualized using the seaborn heatmap, providing a clear overview of the model's true positive, true negative, false positive, and false negative predictions.
 Conclusion
 
-The Decision Tree Classifier demonstrated strong predictive capabilities for passenger satisfaction based on the provided features. The high accuracy suggests that the model is effective in distinguishing between satisfied and unsatisfied passengers.
+The Decision Tree Classifier demonstrated strong predictive capabilities for passenger satisfaction based on the provided features. The high accuracy suggests that the model effectively distinguishes between satisfied and unsatisfied passengers.
 
 
 
 ANN
 The dataset is the same as for the other 2 algorithms used before, thus I'll not explain it again from the beginning.
-The only differences between the 2 previous models and Ann are that in this last case, I  did use feature selection and Smote.
-The results of this last model are the best.
+The only difference between the 2 previous two models and Ann is that in this last case, I used feature selection and Smote.
+The accuracy of this last model is similar to the one obtained with Decision Dree (0.959).
